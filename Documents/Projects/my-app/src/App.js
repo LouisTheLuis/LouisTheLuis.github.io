@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/Preloader";
 import Home from "./components/Home";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 import {
   BrowserRouter as Router,
   Route,
@@ -26,6 +28,8 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>
