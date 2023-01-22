@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "./components/Preloader";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <Router>
-      <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Routes>
           <Route path="/" element={<Home />} />

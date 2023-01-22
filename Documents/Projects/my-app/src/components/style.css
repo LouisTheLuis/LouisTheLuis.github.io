@@ -83,77 +83,7 @@
 .remove-underline {
   text-decoration: none;
 }
-.menu-icon {
-  display: none;
-}
 
-@media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .menu-icon {
-    position: absolute;
-    right: 1vw;
-    top: 0.7vh;
-    display: block;
-    cursor: pointer;
-    color: #902D41;
-  }
-
-  .navbar {
-    height: 70px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 270px;
-    background-size: 201% 100%;
-    transition: background-position 0.3s ease-in;
-    background-image: linear-gradient(to left, #e3cece 50%, white 50%);
-  }
-  .navbar.active {
-    position: absolute;
-    background-position: +100% 0%;
-    right: 0;
-  }
-
-  .nav-elements {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    background-color: #e3cece;
-    width: 0px;
-    height: calc(100vh);
-    transition: all 0.3s ease-in;
-    overflow: hidden;
-  }
-  .nav-elements.active {
-    width: 270px;
-  }
-  .nav-elements ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-elements ul li {
-    margin-right: unset;
-    margin-top: 22px;
-  }
-
-  .buttons::after {
-    content: '';
-    position: absolute;
-    width: 110px;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #902D41;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-}
 
 /* ------------------
 * HOME STYLING
@@ -326,4 +256,151 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* ----------------------
+* MOBILE NAVBAR STYLING
+------------------------ */
+.menu-icon {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  right: 1vw;
+  top: 0.7vh;
+  color: #902D41;
+}
+
+.mobile-navbar {
+  position: fixed;
+  width: 0px;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transition: 0.3s ease-in;
+  background-color: #e3cece;
+  z-index: 1;
+}
+.mobile-navbar.active {
+  width: 270px;
+}
+
+.buttons-wrapper {
+  position: relative;
+  width: 0px;
+  height: 100vh;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.buttons-wrapper.active {
+  width: 250px;
+}
+
+
+/* ------------------
+* HOME MOBILE STYLING
+------------------- */ 
+.homemob-square {
+  position: relative;
+  width: 100vw;
+  top: 10vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.textmob-square {
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.5vh;
+  color: #902D41;
+  letter-spacing: 0.1em;
+  padding: 1vw;
+}
+
+.icon-square {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vh;
+  color: #902D41;
+}
+
+.image-square {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 5px solid #902D41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.resizemob {
+  height: 400px;
+}
+
+/* ----------------------
+* PROJECTS MOBILE STYLING
+------------------------ */ 
+.projectsmob-square {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectmob-section {
+  width: 90vw;
+  height: 95vh;
+  background-color: #fed7d7;
+  transition: width 1s, height 1s;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-font {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.project-buttons {
+  background-color: #ba576b;
+  border-width: 0px;
+  height: 7vh;
+  width: 25vw;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.project-buttons:hover {
+  background-color: #9b4959;
+  height: 8vh;
+  width: 26vw;
 }

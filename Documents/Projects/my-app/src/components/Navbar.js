@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom'
-import { GiHamburgerMenu } from "react-icons/gi";
 import "./style.css";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
-
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
-
   return (
     <>
     <div>
-        <nav className={`navbar  ${showNavbar && 'active'}`}>
+        <nav className="navbar">
             <div className="container">
-                <div className="menu-icon" onClick={handleShowNavbar}>
-                    <GiHamburgerMenu />
-                </div>
-                <div className={`nav-elements  ${showNavbar && 'active'}`}>
+                <div className="nav-elements">
                     <ul>
                         <li><NavLink to="/" className="buttons">About</NavLink></li>
                         <li><NavLink to="/resume" className="buttons">Resume</NavLink></li>
