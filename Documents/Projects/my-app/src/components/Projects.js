@@ -117,8 +117,8 @@ const Projects = () => {
                             and the VGA screen.
                         </div>
                         <div style={{display:"flex", flexDirection:"row", gap:"8vw", marginTop:"3vh"}}>
-                            <a href="https://github.com/alkeirn/optical_project" target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiFillGithub style={{fontSize:"3vh"}}/> Github</button></a>
-                            <a href={spdifreport} target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiOutlineFilePdf style={{fontSize:"3vh"}}/> Final Report</button></a>
+                            <a href="https://github.com/alkeirn/optical_project" target="_blank" style={{textDecoration:"none"}}><button className="projectmob-buttons"><AiFillGithub style={{fontSize:"3vh"}}/> Github</button></a>
+                            <a href={spdifreport} target="_blank" style={{textDecoration:"none"}}><button className="projectmob-buttons"><AiOutlineFilePdf style={{fontSize:"3vh"}}/> Final Report</button></a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@ const Projects = () => {
                             48 Greek constellations, a casual game mode, a competitive mode, and a leaderboard.
                         </div>
                         <div style={{display:"flex", flexDirection:"row", gap:"8vw", marginTop:"3vh"}}>
-                            <a href="https://github.com/LouisTheLuis/the-stargazer" target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiFillGithub style={{fontSize:"3vh"}}/> Github</button></a>
+                            <a href="https://github.com/LouisTheLuis/the-stargazer" target="_blank" style={{textDecoration:"none"}}><button className="projectmob-buttons"><AiFillGithub style={{fontSize:"3vh"}}/> Github</button></a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const Projects = () => {
                             verified with an oscilloscope.
                         </div>
                         <div style={{display:"flex", flexDirection:"row", gap:"8vw", marginTop:"3vh"}}>
-                            <a href={broadbandreport} target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiOutlineFilePdf style={{fontSize:"3vh"}}/>Final Report</button></a>
+                            <a href={broadbandreport} target="_blank" style={{textDecoration:"none"}}><button className="projectmob-buttons"><AiOutlineFilePdf style={{fontSize:"3vh"}}/>Final Report</button></a>
                         </div>
                     </div>
                 </div>

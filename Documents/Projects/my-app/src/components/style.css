@@ -386,7 +386,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.project-buttons {
+.projectmob-buttons {
   background-color: #ba576b;
   border-width: 0px;
   height: 7vh;
@@ -399,7 +399,7 @@ body {
   color: #FFFFFF;
   transition: 1s;
 }
-.project-buttons:hover {
+.projectmob-buttons:hover {
   background-color: #9b4959;
   height: 8vh;
   width: 26vw;
