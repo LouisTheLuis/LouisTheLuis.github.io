@@ -42,7 +42,7 @@ const Home = () => {
             Hi! I'm Louis, a 3rd year Electrical Engineering and Computer Science student at MIT
             <div className="icon-square">
               <a href="https://github.com/LouisTheLuis" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillGithub/></a>
-              <a href="luism@mit.edu" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillMail/></a>
+              <a href="mailto: luism@mit.edu" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillMail/></a>
               <a href="https://www.linkedin.com/in/luis-martinez-a55285250/" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillLinkedin/></a>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Home = () => {
               />
             <div className="icon-square">
               <a href="https://github.com/LouisTheLuis" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillGithub/></a>
-              <a href="luism@mit.edu" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillMail/></a>
+              <a href="mailto: luism@mit.edu" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillMail/></a>
               <a href="https://www.linkedin.com/in/luis-martinez-a55285250/" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillLinkedin/></a>
             </div>
           </div>
