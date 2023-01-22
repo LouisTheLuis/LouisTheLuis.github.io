@@ -39,8 +39,15 @@ const Home = () => {
         <Navbar/>
         <div className="home-square">
           <div className="text-square">
-            Hi! I'm Louis, a 3rd year Electrical Engineering and Computer Science student at MIT
-            <div className="icon-square">
+          <Typewriter
+                  options={{
+                    strings: [
+                      "Hi! I'm Louis, a 3rd year Electrical Engineering and Computer Science student at MIT."
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+              />            <div className="icon-square">
               <a href="https://github.com/LouisTheLuis" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillGithub/></a>
               <a href="mailto: luism@mit.edu" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillMail/></a>
               <a href="https://www.linkedin.com/in/luis-martinez-a55285250/" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillLinkedin/></a>
@@ -55,11 +62,27 @@ const Home = () => {
             <div className="image-square"><img src={require('../assets/osci.jpg').default} className="resize"/></div>
           </div>
           <div className="text-square">
-            I love hardware, software, and most importantly, making stuff! Check my project page!
-          </div>
+          <Typewriter
+                  options={{
+                    strings: [
+                      "I love hardware, software, and most importantly, making stuff! Check my project page!"
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+              />          </div>
         </div>
         <div className="home-square">
-          <div className="text-square">I am from Puerto Ordaz, Venezuela. During my free time, I love reading, appreciating film, and learning about history!</div>
+          <div className="text-square">
+          <Typewriter
+                options={{
+                  strings: [
+                    "I am from Puerto Ordaz, Venezuela. During my free time, I love reading, appreciating film, and learning about history!"
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+            />          </div>
           <div className="text-square">
             <div className="image-square"><img src={require('../assets/books.jpg').default} className="resize"/></div>
           </div>
