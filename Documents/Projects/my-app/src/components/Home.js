@@ -53,7 +53,7 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/luis-martinez-a55285250/" target="_blank" rel="noreferrer" style={{color:"#902D41"}}><AiFillLinkedin/></a>
             </div>
           </div>
-          <div className="text-square">
+          <div className="text-square" >
             <div className="image-square"><img src={require('../assets/yo.jpg').default} className="resize"/></div>
           </div>
         </div>

@@ -46,7 +46,7 @@ const Projects = () => {
                 <h2 style={{color:"#b56776"}}>Here are some of the recent projects I have worked on!</h2>
                 <br/>
                 <div className="projects-square">
-                    <div className="project-section" style={{boxShadow:"3px 3px 7px 2px rgba(190, 76, 99, 0.6)"}}>
+                    <div className="project-section">
                         <h1 style={{fontSize:"4vh", opacity:"0.5"}}>Audio Transmission via S/PDIF</h1>
                         <img src={spdif} style={{width:"25vw"}}/>
                         <div style={{width:"25vw", fontSize:"2vh", marginTop:"2vh", opacity:"0.7"}}>
@@ -63,7 +63,7 @@ const Projects = () => {
                             <a href={spdifreport} target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiOutlineFilePdf style={{fontSize:"3vh"}}/> Final Report</button></a>
                         </div>
                     </div>
-                    <div className="project-section" style={{boxShadow:"0px 3px 7px 2px rgba(190, 76, 99, 0.6)"}}>
+                    <div className="project-section">
                         <h1 style={{fontSize:"4vh", opacity:"0.5"}}>Stargazer</h1>
                         <img src={stargazer} style={{width:"27vw"}}/>
                         <div style={{width:"25vw", fontSize:"2vh", marginTop:"2vh", opacity:"0.7"}}>
@@ -79,7 +79,7 @@ const Projects = () => {
                             <a href="https://github.com/LouisTheLuis/the-stargazer" target="_blank" style={{textDecoration:"none"}}><button className="project-buttons"><AiFillGithub style={{fontSize:"3vh"}}/> Github</button></a>
                         </div>
                     </div>
-                    <div className="project-section" style={{boxShadow:"-3px 3px 7px 2px rgba(190, 76, 99, 0.6)"}}>
+                    <div className="project-section">
                         <h1 style={{fontSize:"4vh", opacity:"0.5"}}>Broadband Amplifier</h1>
                         <img src={broadband} style={{width:"20vw"}}/>
                         <div style={{width:"25vw", fontSize:"2vh", marginTop:"2vh", opacity:"0.7"}}>
