@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Navbar.js";
 import MobileNavbar from "./MobileNavbar.js";
 import "./style.css";
@@ -16,6 +16,33 @@ import {
 const LoadingComponent = () => <div style={{width:"100vw", height:"100vh", justifyContent:"center", alignItems:"center", display:"flex"}}>
     <div className="lds-dual-ring"></div>
 </div>;
+
+const Canvas = props => {
+  
+    const canvasRef = useRef(null);
+    
+    useEffect(() => {
+      var circle1 = Math.random();
+      var circle2 = Math.random();
+      var circle3 = Math.random();
+      var circle4 = Math.random();
+      var circle5 = Math.random();
+  
+      const canvas = canvasRef.current;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const context = canvas.getContext('2d');
+  
+      for (let i = 0; i < 10; i = i + 1) {
+        context.beginPath();
+        context.arc(Math.random()*context.canvas.width, Math.random()*context.canvas.height, Math.random()*70, 0, 2 * Math.PI);
+        context.fillStyle = "rgb(255, 255, 224)";
+        context.fill();
+      }
+    }, [])
+    
+    return <canvas ref={canvasRef} {...props}/>
+  }
 
 const Projects = () => {
     const [mobile, setMobile] = useState(false);
@@ -40,6 +67,7 @@ const Projects = () => {
     if (!mobile) {
         return (
         <>
+            <Canvas className="my-canvas"/>
             <Navbar/>
             <div className="projects-font">
                 <h1 style={{fontSize:"6vh", color:"#902D41", letterSpacing: "0.1em"}}>RECENT WORKS</h1>
